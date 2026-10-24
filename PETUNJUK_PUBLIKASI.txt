@@ -1,0 +1,22 @@
+INFORAMA AI STUDIO 2.1 — PAKET PWA
+
+ISI PAKET
+- index.html: aplikasi
+- manifest.webmanifest: metadata PWA
+- sw.js: cache offline dasar
+- icons/icon-192.png dan icon-512.png: ikon dari logo yang diberikan
+
+CARA PUBLIKASI GITHUB PAGES (HTTPS)
+1. Buat repository baru di GitHub, misalnya inforama-ai-studio.
+2. Unggah SEMUA isi folder paket ini ke root repository. Pastikan index.html, manifest.webmanifest, dan sw.js berada di root; folder icons ikut diunggah.
+3. Buka Settings > Pages.
+4. Pada Build and deployment pilih Deploy from a branch, branch main, folder /(root), lalu Save.
+5. Tunggu hingga GitHub Pages memberi URL HTTPS. Buka URL tersebut di Chrome Android.
+6. Di menu Chrome pilih Install app atau Add to Home screen (nama menu dapat berbeda).
+7. Buka aplikasi sekali dengan internet agar file cache tersimpan. Penggunaan offline tersedia untuk shell aplikasi; fitur yang memerlukan layanan AI tetap perlu internet dan dibuka terpisah.
+
+CATATAN
+- Tidak perlu API key karena aplikasi ini hanya menyusun prompt; gambar dibuat pada layanan AI pilihan Anda.
+- Penyimpanan proyek menggunakan localStorage pada browser/perangkat yang sama. Unduh paket .txt untuk cadangan.
+- PWA membutuhkan HTTPS atau localhost untuk service worker. Membuka file HTML langsung dari penyimpanan HP tidak mengaktifkan instalasi PWA.
+- Untuk iPhone: buka situs di Safari, tekan Share, lalu Add to Home Screen. Dukungan menu dapat berbeda menurut versi iOS.
